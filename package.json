@@ -49,5 +49,10 @@
     "access": "public"
   },
   "author": "Su Le",
-  "icon": "./icon.svg"
+  "icon": "./icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrytunwang/dsh-plugin-session-fulltext.git"
+  },
+  "homepage": "https://github.com/henrytunwang/dsh-plugin-session-fulltext#readme"
 }
