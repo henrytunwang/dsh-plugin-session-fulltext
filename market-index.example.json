@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Sule's DSH plugins",
+    "zh": "苏乐的 DSH 插件"
+  },
+  "description": {
+    "en": "Personal DSH plugin index.",
+    "zh": "个人 DSH 插件索引。"
+  },
+  "metadata": {
+    "categories": {
+      "search": {
+        "title": {
+          "en": "Search",
+          "zh": "搜索"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-session-fulltext",
+      "title": {
+        "en": "Session full-text search",
+        "zh": "会话全文搜索"
+      },
+      "description": {
+        "en": "Literal, CJK-friendly content search for the DSH sidebar, with click-to-reveal highlighting and in-session previous/next match navigation.",
+        "zh": "DSH 侧边栏的 CJK 友好全文搜索：字面子串检索会话正文，点结果定位高亮，并支持会话内上一个/下一个命中。"
+      },
+      "author": "le.su",
+      "repository": {
+        "url": "https://github.com/YOUR_GITHUB/YOUR_REPO",
+        "directory": "dsh-plugins/session-fulltext"
+      },
+      "metadata": {
+        "category": "search",
+        "keywords": [
+          "search",
+          "fulltext",
+          "cjk",
+          "chinese",
+          "session"
+        ],
+        "labels": []
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1792490844,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

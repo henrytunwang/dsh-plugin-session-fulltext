@@ -1,0 +1,48 @@
+{
+  "name": "dsh-plugin-session-fulltext",
+  "version": "1.0.0",
+  "private": false,
+  "description": "CJK-friendly full-text content search for the DSH sidebar: literal substring search over Session history, click-to-reveal highlighting, and in-session previous/next match navigation.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "session-search",
+    "full-text",
+    "search",
+    "cjk",
+    "chinese"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

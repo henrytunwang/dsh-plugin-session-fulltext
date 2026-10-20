@@ -1,0 +1,15 @@
+# This bundle owns no configuration rows of its own.
+#
+# It inserts one row that loads the plugin. The plugin takes the mounted
+# Session Query service (`ctx.sessionQuery`) and replaces only its
+# `searchSessions` method, so the sidebar's 250 ms-debounced content search
+# uses literal substring matching instead of the FTS5 `unicode61` token
+# matcher. Exact reads, titles, traces, and filters keep working unchanged.
+- insert:
+    - id: session-fulltext
+      name: 'dsh-plugin-session-fulltext'
+      config:
+        # Debug logging is opt-in: set `debug: true` in a profile patch to
+        # write `$DSH_HOME/session-fulltext.log` (activation, warm-up and search
+        # traffic). It never affects search behavior.
+        debug: false
