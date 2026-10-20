@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session full-text search",
+    "description": "Literal, CJK-friendly content search for the DSH sidebar, with click-to-reveal highlighting and in-session previous/next match navigation."
+  }
+}
